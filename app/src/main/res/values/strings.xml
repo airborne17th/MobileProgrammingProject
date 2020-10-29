@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">LivingRootProject3</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="faction_cat_message">Build into industrial and military powerhouse!</string>
+    <string name="faction_bird_message">Build a powerful decree to restore your glory!</string>
+    <string name="faction_woodland_message">Gain sympathy of the forest denizens to rise up!</string>
+    <string name="faction_vagabond_message">Adventure across the land and build your renown.</string>
+    <string name="faction_lizard_message">Spread the lizard gospel through sheer force of will.</string>
+    <string name="faction_riverfolk_message">Beavers with powerful commercial interests and a massive treasury.</string>
+    <string name="faction_duchy_message">Monarchist Moles who builds into an unstoppable late game faction!</string>
+    <string name="faction_corvid_message">Criminal ravens with crafty and devious plots.</string>
+    <string name="fall_map">Fall Map Selected</string>
+    <string name="winter_map">Winter Map Selected</string>
+    <string name="lake_map">Lake Map Selected</string>
+    <string name="mountain_map">Mountain Map Selected</string>
+</resources>
