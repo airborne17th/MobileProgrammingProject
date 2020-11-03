@@ -4,11 +4,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
 import android.view.View;
-
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -54,8 +53,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showFaction(View view) {
+        // TextView myAwesomeTextView = (TextView)findViewById(R.id.txtCat);
         switch (view.getId()) {
             case (R.id.cat):
+                // myAwesomeTextView.setText("My Awesome Text");
                 displayToast(getString(R.string.faction_cat_message));
                 break;
             case (R.id.bird):
