@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Root!"
+        android:text="@string/textIntro"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,6 +41,7 @@
         android:layout_marginTop="64dp"
         android:layout_marginEnd="48dp"
         android:layout_marginRight="48dp"
+        android:contentDescription="@string/cat_faction_head"
         android:onClick="showFaction"
         app:layout_constraintEnd_toStartOf="@+id/bird"
         app:layout_constraintHorizontal_bias="0.0"
@@ -55,6 +56,7 @@
         android:layout_marginTop="64dp"
         android:layout_marginEnd="148dp"
         android:layout_marginRight="148dp"
+        android:contentDescription="@string/bird_faction_head"
         android:onClick="showFaction"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -64,7 +66,7 @@
         android:id="@+id/textDesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="A game of woodland might and right."
+        android:text="@string/desc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textIntro" />
@@ -76,6 +78,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="36dp"
+        android:contentDescription="@string/vagabond_faction_head"
         android:onClick="showFaction"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cat"
@@ -88,6 +91,7 @@
         android:layout_marginStart="44dp"
         android:layout_marginLeft="44dp"
         android:layout_marginTop="36dp"
+        android:contentDescription="@string/woodland_faction_head"
         android:onClick="showFaction"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -102,6 +106,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="36dp"
+        android:contentDescription="@string/riverfolk_faction_head"
         android:onClick="showFaction"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/vagabond"
@@ -114,6 +119,7 @@
         android:layout_marginStart="44dp"
         android:layout_marginLeft="44dp"
         android:layout_marginTop="36dp"
+        android:contentDescription="@string/lizards_faction_head"
         android:onClick="showFaction"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -128,9 +134,12 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="40dp"
+        android:contentDescription="@string/crow_faction_head"
         android:onClick="showFaction"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/riverfolk"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/corvid_icon" />
 
     <ImageView
@@ -140,18 +149,21 @@
         android:layout_marginStart="44dp"
         android:layout_marginLeft="44dp"
         android:layout_marginTop="40dp"
+        android:contentDescription="@string/moles_faction_head"
         android:onClick="showFaction"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/corvid"
         app:layout_constraintTop_toBottomOf="@+id/lizard"
+        app:layout_constraintVertical_bias="0.007"
         app:srcCompat="@drawable/duchy_icon" />
 
     <TextView
         android:id="@+id/txtCat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Marquise de Cat"
+        android:text="@string/marquise_de_cat"
         app:layout_constraintEnd_toStartOf="@+id/txtBird"
         app:layout_constraintHorizontal_bias="0.225"
         app:layout_constraintStart_toStartOf="parent"
@@ -163,7 +175,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="152dp"
         android:layout_marginRight="152dp"
-        android:text="Eyrie Dynasties"
+        android:text="@string/eyrie_dynasties"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bird" />
 
@@ -171,7 +183,7 @@
         android:id="@+id/txtVagabond"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Vagabond"
+        android:text="@string/vagabond"
         app:layout_constraintEnd_toStartOf="@+id/txtWoodland"
         app:layout_constraintHorizontal_bias="0.166"
         app:layout_constraintStart_toStartOf="parent"
@@ -181,9 +193,9 @@
         android:id="@+id/txtWoodland"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="180dp"
-        android:layout_marginRight="180dp"
-        android:text="Woodland \n Alliance"
+        android:layout_marginEnd="132dp"
+        android:layout_marginRight="132dp"
+        android:text="@string/woodland_alliance"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/woodland" />
 
@@ -191,7 +203,7 @@
         android:id="@+id/txtRiverfolk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Riverfolk \nCompany"
+        android:text="@string/riverfolk_ncompany"
         app:layout_constraintEnd_toStartOf="@+id/txtLizard"
         app:layout_constraintHorizontal_bias="0.173"
         app:layout_constraintStart_toStartOf="parent"
@@ -203,7 +215,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="184dp"
         android:layout_marginRight="184dp"
-        android:text="Lizard Cult"
+        android:text="@string/lizard_cult"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lizard" />
 
@@ -213,19 +225,23 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:text="Corvid \nConspiracy"
+        android:text="@string/corvid_conspiracy"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/corvid" />
+        app:layout_constraintTop_toBottomOf="@+id/corvid"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/txtDuchy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Underground \n Duchy"
+        android:text="@string/underground_duchy"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.314"
+        app:layout_constraintHorizontal_bias="0.189"
         app:layout_constraintStart_toEndOf="@+id/txtCorvid"
-        app:layout_constraintTop_toBottomOf="@+id/duchy" />
+        app:layout_constraintTop_toBottomOf="@+id/duchy"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/box_favorite"
@@ -234,7 +250,8 @@
         android:layout_marginBottom="12dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Faction"
+        android:text="@string/faction_box"
+        android:onClick="askFavorite"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.061"
@@ -247,20 +264,10 @@
         android:layout_marginStart="12dp"
         android:layout_marginLeft="12dp"
         android:layout_marginBottom="12dp"
-        android:text="Submit"
+        android:text="@string/btn_favorite"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/box_favorite" />
-
-    <TextView
-        android:id="@+id/txtFavorite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Your Favorite Faction?"
-        app:layout_constraintBottom_toTopOf="@+id/box_favorite"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.058"
-        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

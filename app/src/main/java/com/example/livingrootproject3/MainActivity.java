@@ -53,10 +53,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showFaction(View view) {
-        // TextView myAwesomeTextView = (TextView)findViewById(R.id.txtCat);
         switch (view.getId()) {
             case (R.id.cat):
-                // myAwesomeTextView.setText("My Awesome Text");
                 displayToast(getString(R.string.faction_cat_message));
                 break;
             case (R.id.bird):
@@ -81,5 +79,9 @@ public class MainActivity extends AppCompatActivity {
                 displayToast(getString(R.string.faction_corvid_message));
                 break;
         }
+    }
+
+    public void askFavorite(View view) {
+        displayToast(getString(R.string.question_favorite_message));
     }
 }
