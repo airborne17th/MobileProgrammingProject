@@ -51,4 +51,34 @@
     <string name="btn_reset">Reset</string>
     <string name="ClearingsLayout">1 | 2 | 3 | 4 | 5 | 6\n7 | 8 | 9 | 10 | 11 | 12</string>
     <string name="question_favorite_message">\"What\'s your favorite faction?\"</string>
+    <string name="txtTitle">Living Root Project</string>
+    <string name="boxtxt_lizards">Lizards [2]</string>
+    <string name="lizard_piece">Lizard Piece</string>
+    <string name="vagabond2_piece">Vagabond2 Piece</string>
+    <string name="corvid_piece">Corvid Piece</string>
+    <string name="woodland_piece">Woodland Piece</string>
+    <string name="vagabond_piece">Vagabond Piece</string>
+    <string name="riverfolk_piece">Riverfolk Piece</string>
+    <string name="eyrie_piece">Eyrie Piece</string>
+    <string name="duchy_piece">Duchy Piece</string>
+    <string name="reach_intro">Reach Calculator</string>
+    <string name="cat_piece">Cat Piece</string>
+    <string name="select_number_of_players">Select Number of Players:</string>
+    <string name="boxtxt_corvid">Corvid [3]</string>
+    <string name="boxtxt_vagabond2">Vagabond2 [2]</string>
+    <string name="boxtxt_woodland">Woodland [3]</string>
+    <string name="boxtxt_riverfolk">Riverfolk [5]</string>
+    <string name="boxtxt_vagabond">Vagabond [5]</string>
+    <string name="boxtxt_eyrie">Eyrie [7]</string>
+    <string name="boxtxt_duchy">Duchy [8]</string>
+    <string name="boxtxt_cats">Cats [10]</string>
+    <string name="total_reach">Total Reach:</string>
+    <string name="total_reach_number">0</string>
+    <string-array name="players_array">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
 </resources>
