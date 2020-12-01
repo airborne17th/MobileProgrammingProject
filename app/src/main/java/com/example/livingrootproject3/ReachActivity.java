@@ -2,6 +2,7 @@ package com.example.livingrootproject3;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
@@ -84,5 +85,10 @@ public class ReachActivity extends AppCompatActivity {
             default:
                 throw new IllegalStateException("Unexpected value: " + view.getId());
         }
+    }
+
+    public void backHome(View view) {
+        Intent intent = new Intent(ReachActivity.this, MainActivity.class);
+        startActivity(intent);
     }
 }

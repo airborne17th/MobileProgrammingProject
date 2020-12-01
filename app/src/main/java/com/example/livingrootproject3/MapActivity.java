@@ -2,6 +2,7 @@ package com.example.livingrootproject3;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -31,7 +32,7 @@ public class MapActivity extends AppCompatActivity {
         reset(view);
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
-        ImageView map_image = (ImageView) findViewById(R.id.map_image);
+        ImageView map_image = findViewById(R.id.map_image);
         switch (view.getId()) {
             case R.id.fall:
                 if (checked)
@@ -70,20 +71,20 @@ public class MapActivity extends AppCompatActivity {
             clearingArray[i] = temp;
         }
 
-        ImageView clearing1 = (ImageView) findViewById(R.id.clearing1);
-        ImageView clearing2 = (ImageView) findViewById(R.id.clearing2);
-        ImageView clearing3 = (ImageView) findViewById(R.id.clearing3);
-        ImageView clearing4 = (ImageView) findViewById(R.id.clearing4);
-        ImageView clearing5 = (ImageView) findViewById(R.id.clearing5);
-        ImageView clearing6 = (ImageView) findViewById(R.id.clearing6);
-        ImageView clearing7 = (ImageView) findViewById(R.id.clearing7);
-        ImageView clearing8 = (ImageView) findViewById(R.id.clearing8);
-        ImageView clearing9 = (ImageView) findViewById(R.id.clearing9);
-        ImageView clearing10 = (ImageView) findViewById(R.id.clearing10);
-        ImageView clearing11 = (ImageView) findViewById(R.id.clearing11);
-        ImageView clearing12 = (ImageView) findViewById(R.id.clearing12);
+        ImageView clearing1 = findViewById(R.id.clearing1);
+        ImageView clearing2 = findViewById(R.id.clearing2);
+        ImageView clearing3 = findViewById(R.id.clearing3);
+        ImageView clearing4 = findViewById(R.id.clearing4);
+        ImageView clearing5 = findViewById(R.id.clearing5);
+        ImageView clearing6 = findViewById(R.id.clearing6);
+        ImageView clearing7 = findViewById(R.id.clearing7);
+        ImageView clearing8 = findViewById(R.id.clearing8);
+        ImageView clearing9 = findViewById(R.id.clearing9);
+        ImageView clearing10 = findViewById(R.id.clearing10);
+        ImageView clearing11 = findViewById(R.id.clearing11);
+        ImageView clearing12 = findViewById(R.id.clearing12);
 
-        ImageView imgArray[] = { clearing1, clearing2, clearing3, clearing4, clearing5, clearing6, clearing7, clearing8, clearing9, clearing10, clearing11, clearing12 };
+        ImageView[] imgArray = { clearing1, clearing2, clearing3, clearing4, clearing5, clearing6, clearing7, clearing8, clearing9, clearing10, clearing11, clearing12 };
 
         for(int i = 0; i < clearingArray.length; i++) {
             switch(clearingArray[i]) {
@@ -108,23 +109,28 @@ public class MapActivity extends AppCompatActivity {
     }
 
     public void reset(View view) {
-        ImageView clearing1 = (ImageView) findViewById(R.id.clearing1);
-        ImageView clearing2 = (ImageView) findViewById(R.id.clearing2);
-        ImageView clearing3 = (ImageView) findViewById(R.id.clearing3);
-        ImageView clearing4 = (ImageView) findViewById(R.id.clearing4);
-        ImageView clearing5 = (ImageView) findViewById(R.id.clearing5);
-        ImageView clearing6 = (ImageView) findViewById(R.id.clearing6);
-        ImageView clearing7 = (ImageView) findViewById(R.id.clearing7);
-        ImageView clearing8 = (ImageView) findViewById(R.id.clearing8);
-        ImageView clearing9 = (ImageView) findViewById(R.id.clearing9);
-        ImageView clearing10 = (ImageView) findViewById(R.id.clearing10);
-        ImageView clearing11 = (ImageView) findViewById(R.id.clearing11);
-        ImageView clearing12 = (ImageView) findViewById(R.id.clearing12);
+        ImageView clearing1 = findViewById(R.id.clearing1);
+        ImageView clearing2 = findViewById(R.id.clearing2);
+        ImageView clearing3 = findViewById(R.id.clearing3);
+        ImageView clearing4 = findViewById(R.id.clearing4);
+        ImageView clearing5 = findViewById(R.id.clearing5);
+        ImageView clearing6 = findViewById(R.id.clearing6);
+        ImageView clearing7 = findViewById(R.id.clearing7);
+        ImageView clearing8 = findViewById(R.id.clearing8);
+        ImageView clearing9 = findViewById(R.id.clearing9);
+        ImageView clearing10 = findViewById(R.id.clearing10);
+        ImageView clearing11 = findViewById(R.id.clearing11);
+        ImageView clearing12 = findViewById(R.id.clearing12);
 
-        ImageView imgArray[] = { clearing1, clearing2, clearing3, clearing4, clearing5, clearing6, clearing7, clearing8, clearing9, clearing10, clearing11, clearing12 };
+        ImageView[] imgArray = { clearing1, clearing2, clearing3, clearing4, clearing5, clearing6, clearing7, clearing8, clearing9, clearing10, clearing11, clearing12 };
 
-        for(int i = 0; i < imgArray.length; i++) {
-            imgArray[i].setImageResource(R.drawable.clearing_blank);
+        for (ImageView imageView : imgArray) {
+            imageView.setImageResource(R.drawable.clearing_blank);
         }
+    }
+
+    public void backHome(View view) {
+        Intent intent = new Intent(MapActivity.this, MainActivity.class);
+        startActivity(intent);
     }
 }

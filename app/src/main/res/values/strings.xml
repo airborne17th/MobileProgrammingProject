@@ -74,6 +74,11 @@
     <string name="boxtxt_cats">Cats [10]</string>
     <string name="total_reach">Total Reach:</string>
     <string name="total_reach_number">0</string>
+    <string name="reach_number_text">Number of Players \n 2p: +17 \n 3p: +18 \n 4p: +21 \n 5p: +25 \n 6p: +28</string>
+    <string name="btnDate">Choose a time</string>
+    <string name="schedule_header">Reserve a game table</string>
+    <string name="player_count">Number of Players</string>
+    <string name="reserve">Reserve</string>
     <string-array name="players_array">
         <item>2</item>
         <item>3</item>

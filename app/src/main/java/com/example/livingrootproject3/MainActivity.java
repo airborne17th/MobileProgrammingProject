@@ -1,16 +1,22 @@
 package com.example.livingrootproject3;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+    ImageButton music_button;
+    MediaPlayer mpFantasy;
+    int playing;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +24,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        music_button = (ImageButton)findViewById(R.id.musicBtn);
+        music_button.setOnClickListener(bMusic);
+        mpFantasy = new MediaPlayer();
+        mpFantasy = MediaPlayer.create(this, R.raw.mystic);
+        playing = 0;
     }
 
     public void GoTo_MapActivity(View view) {
@@ -27,6 +38,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void GoTo_ReachActivity(View view) {
         Intent intent = new Intent(MainActivity.this, ReachActivity.class);
+        startActivity(intent);
+    }
+
+    public void GoTo_ScheduleActivity(View view) {
+        Intent intent = new Intent(MainActivity.this, ScheduleActivity.class);
         startActivity(intent);
     }
 
@@ -85,6 +101,24 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
     }
+
+    ImageButton.OnClickListener bMusic = new ImageButton.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            switch (playing) {
+                case 0:
+                    //starts the music
+                    mpFantasy.start();
+                    playing = 1;
+                    break;
+                case 1:
+                    //pauses the music
+                    mpFantasy.pause();
+                    playing = 0;
+                    break;
+            }
+        }
+    };
 
     public void askFavorite(View view) {
         displayToast(getString(R.string.question_favorite_message));
