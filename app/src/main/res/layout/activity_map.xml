@@ -14,7 +14,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="64dp"
-        android:contentDescription="Clearing Circle"
+        android:contentDescription="@string/clearing_circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/clearing10"
         app:layout_constraintTop_toBottomOf="@+id/clearing3"
@@ -31,7 +31,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="64dp"
-        android:contentDescription="Clearing Circle"
+        android:contentDescription="@string/clearing_circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/clearing8"
         app:layout_constraintHorizontal_bias="1.0"
@@ -48,7 +48,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="64dp"
-        android:contentDescription="Clearing Circle"
+        android:contentDescription="@string/clearing_circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/clearing9"
         app:layout_constraintTop_toBottomOf="@+id/clearing2"
@@ -63,7 +63,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="64dp"
-        android:contentDescription="Clearing Circle"
+        android:contentDescription="@string/clearing_circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/clearing11"
         app:layout_constraintTop_toBottomOf="@+id/clearing4"
@@ -78,7 +78,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="64dp"
-        android:contentDescription="Clearing Circle"
+        android:contentDescription="@string/clearing_circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/clearing12"
         app:layout_constraintTop_toBottomOf="@+id/clearing5"
@@ -93,7 +93,7 @@
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
         android:layout_marginBottom="64dp"
-        android:contentDescription="Clearing Circle"
+        android:contentDescription="@string/clearing_circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/clearing6"
@@ -107,7 +107,7 @@
         android:layout_marginTop="42dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:contentDescription="Clearing Circle"
+        android:contentDescription="@string/clearing_circle"
         app:layout_constraintEnd_toStartOf="@+id/clearing4"
         app:layout_constraintTop_toBottomOf="@+id/map_image"
         app:srcCompat="@drawable/clearing_blank" />
@@ -119,7 +119,7 @@
         android:layout_marginTop="42dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:contentDescription="Clearing Circle"
+        android:contentDescription="@string/clearing_circle"
         app:layout_constraintEnd_toStartOf="@+id/clearing6"
         app:layout_constraintTop_toBottomOf="@+id/map_image"
         app:srcCompat="@drawable/clearing_blank" />
@@ -131,7 +131,7 @@
         android:layout_marginTop="42dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:contentDescription="Clearing Circle"
+        android:contentDescription="@string/clearing_circle"
         app:layout_constraintEnd_toStartOf="@+id/clearing5"
         app:layout_constraintTop_toBottomOf="@+id/map_image"
         app:srcCompat="@drawable/clearing_blank" />
@@ -143,7 +143,7 @@
         android:layout_marginTop="42dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:contentDescription="Clearing Circle"
+        android:contentDescription="@string/clearing_circle"
         app:layout_constraintEnd_toStartOf="@+id/clearing3"
         app:layout_constraintTop_toBottomOf="@+id/map_image"
         app:srcCompat="@drawable/clearing_blank" />
@@ -155,7 +155,7 @@
         android:layout_marginTop="42dp"
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
-        android:contentDescription="Clearing Circle"
+        android:contentDescription="@string/clearing_circle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/map_image"
         app:srcCompat="@drawable/clearing_blank" />
@@ -169,7 +169,7 @@
         android:layout_marginTop="42dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:contentDescription="Clearing Circle"
+        android:contentDescription="@string/clearing_circle"
         app:layout_constraintEnd_toStartOf="@+id/clearing2"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -223,7 +223,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.112"
-        app:srcCompat="@drawable/map_fall" />
+        app:srcCompat="@drawable/map_fall"
+        android:contentDescription="@string/board_map" />
 
     <Button
         android:id="@+id/btn_randomize"
@@ -272,6 +273,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_directions" />
+        app:srcCompat="@android:drawable/ic_menu_directions"
+        android:focusable="true" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

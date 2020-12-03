@@ -303,6 +303,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_directions" />
+        app:srcCompat="@android:drawable/ic_menu_directions"
+        android:focusable="true" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

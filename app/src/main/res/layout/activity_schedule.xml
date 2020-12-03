@@ -71,7 +71,8 @@
         app:layout_constraintBottom_toTopOf="@+id/btnReserve"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnDate" />
+        app:layout_constraintTop_toBottomOf="@+id/btnDate"
+        android:autofillHints="@string/playercount" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btnHome"
@@ -84,6 +85,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_directions" />
+        app:srcCompat="@android:drawable/ic_menu_directions"
+        android:focusable="true" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
